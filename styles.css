@@ -1,0 +1,130 @@
+body {
+  background: linear-gradient(to left, #1c1d1c, #0d0d0e);
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif, sans-serif;
+}
+
+.container {
+  border-radius: 4px;
+  margin: 40px;
+  width: 450px;
+  height: 80%;
+  display: grid;
+  grid-template-rows: minmax (150px, auto) repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgba(2, 0, 0, 0.267);
+  grid-template-areas:
+    "output output output output"
+    "ac     ac    del   divide"
+    "btn7   btn8  btn9  multiply"
+    "btn4   btn5  btn6  subtract"
+    "btn1   btn2  btn3  add"
+    "btn0   btn0  dot   equal";
+  grid-gap: 8px;
+  color: rgb(8, 8, 8);
+  text-align: center;
+  font-size: 38px;
+  overflow: hidden;
+}
+
+.output {
+  background-color: rgba(41, 34, 34, 0.479);
+  grid-area: output;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  word-break: break-all;
+  overflow: hidden;
+  height: 150px;
+}
+
+.previous-display {
+  font-size: 30px;
+  color: rgba(218, 165, 32, 0.5);
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  padding: 10px;
+}
+
+.main-display {
+  font-size: 50px;
+  color: goldenrod;
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  padding: 10px;
+}
+
+.btn {
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 20px;
+  background-color: goldenrod;
+}
+
+.btn:hover {
+  background-color: rgb(255, 208, 0);
+  color: rgb(46, 45, 45);
+}
+
+#ac {
+  grid-area: ac;
+}
+#del {
+  grid-area: del;
+}
+#divide {
+  grid-area: divide;
+}
+#multiply {
+  grid-area: multiply;
+}
+#subtract {
+  grid-area: subtract;
+}
+#add {
+  grid-area: add;
+}
+#decimal {
+  grid-area: dot;
+}
+#equal {
+  grid-area: equal;
+}
+#btn0 {
+  grid-area: btn0;
+}
+#btn1 {
+  grid-area: btn1;
+}
+#btn2 {
+  grid-area: btn2;
+}
+#btn3 {
+  grid-area: btn3;
+}
+#btn4 {
+  grid-area: btn4;
+}
+#btn5 {
+  grid-area: btn5;
+}
+#btn6 {
+  grid-area: btn6;
+}
+#btn7 {
+  grid-area: btn7;
+}
+#btn8 {
+  grid-area: btn8;
+}
+#btn9 {
+  grid-area: btn9;
+}
