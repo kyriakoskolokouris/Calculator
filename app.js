@@ -56,14 +56,13 @@ function clearDisplay(name = "") {
 function operate() {
   if (lastOp === "x") {
     result = parseFloat(result) * parseFloat(displayNum);
-    result = result.toFixed(3);
   } else if (lastOp === "+") {
     result = parseFloat(result) + parseFloat(displayNum);
   } else if (lastOp === "-") {
     result = parseFloat(result) - parseFloat(displayNum);
   } else if (lastOp === "/") {
     result = parseFloat(result) / parseFloat(displayNum);
-    result = result.toFixed(3);
+    result = result.toFixed(1);
   } 
 }
 
